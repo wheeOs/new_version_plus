@@ -143,7 +143,7 @@ class NewVersionPlus {
     Map<String, dynamic> parameters = {};
 
     /// programmermager:fix/issue-35-ios-failed-host-lookup
-    final idParam = ((iOSIdIsBundleId == null && id.contains('.')) || iOSIdIsBundleId)
+    final idParam = ((iOSIdIsBundleId == null && id.contains('.')) || iOSIdIsBundleId == true)
         ? 'bundleId' : 'id';
     parameters[idParam] = id;
 
